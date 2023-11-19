@@ -43,6 +43,10 @@
     list-style-type: none;
 }
 
+.options-ul {
+    list-style-type: none;
+}
+
 .submit {
     display: flex;
     justify-content: center;
@@ -74,18 +78,24 @@
 
     <div class="options">
         <div class="options-list">
-            <ul id="List1"></ul></div>
+            <ul id="List1" class="options-ul"></ul></div>
         <div class="options-list">
-            <ul id="List2"></ul></div>
+            <ul id="List2" class="options-ul"></ul></div>
         <div class="options-list">        
-            <ul id="List3"></ul>
+            <ul id="List3" class="options-ul"></ul>
         </div>
+
         <script>
 
             function listout(array, makelist) {
                 for (i = 0; i < array.length; ++i) {
+                var cbox = document.createElement('input');
+                cbox.setAttribute('type', "checkbox");
+                cbox.setAttribute('id', array[i]);
+                cbox.setAttribute('name', array[i]);
                 var li = document.createElement('li');
-                li.innerText = array[i];
+                li.appendChild(cbox);
+                li.appendChild(document.createTextNode(array[i]));
                 makelist.appendChild(li);
                 }
             }
@@ -101,7 +111,7 @@
             let cultures = ["Latin", "Puerto Rican", "Global", "Indian", "African", "Colombian", "Dutch", "Kenyan", "Western Classical", "African", "Somali", "Canadian", "Japanese", "Scottish", "Romani"];
             let culturelist = document.getElementById("List3");
             listout(cultures, culturelist)
-            
+
         </script>
     </div>
 
@@ -110,5 +120,7 @@
     </div>
 
 </body>
+<data src="data.js">
 
+</data>
 </html>
