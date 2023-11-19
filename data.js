@@ -25,15 +25,19 @@
     const genreList = ["Reggaeton", "Pop", "Bollywood", "Afrobeat", "Rock and Roll", "Dutch", "Benga", "Classical", "World", "Folk", "Hip-hop",
     "J-Rock", "Progressive Metal", "Romani", "Gypsy"];
     const languageList = ["Spanish", "English", "Hindi", "Urdu", "Dutch", "Luo", "Instrumental", "Swahili", "Japanese", "Romani"];
-    const 
+    const occasionList = ["Social gatherings", "parties", "events", "Humanitarian events", "charity functions", "Celebrations", "Victory", "Festivals", 
+    ];
+    const cultureList = ["Latin", "Puerto Rican", "Global", "Indian", ];
+    const artistNameList = ["Luis Fonsi", "Daddy Yankee", "Michael Jackson", ];
+    const homeLandList = ["Puerto Rico", "United States", ];
     
     const despacitoInfo = {
         song: {
           title: "Despacito",
-          genre: "Reggaeton/Pop",
+          genre: ["Reggaeton","Pop"],
           language: "Spanish",
-          occasion: "Social gatherings, parties, events",
-          culture: "Latin, Puerto Rican"
+          occasion: ["Social gatherings", "parties", "events"],
+          culture: ["Latin", "Puerto Rican"]
         },
         artists: [
           {
@@ -55,7 +59,7 @@
           title: "Heal the World",
           genre: "Pop",
           language: "English",
-          occasion: "Humanitarian events, charity functions",
+          occasion: ["Humanitarian events", "charity functions"],
           culture: "Global"
         },
         artist: {
@@ -70,9 +74,9 @@
     const jaiHoInfo = {
         song: {
           title: "Jai Ho",
-          genre: "Bollywood/Pop",
-          language: "Hindi/Urdu",
-          occasion: "Celebrations, Victory, Festivals",
+          genre: ["Bollywood","Pop"],
+          language: ["Hindi","Urdu"],
+          occasion: ["Celebrations", "Victory", "Festivals"],
           culture: "Indian",
           artistMessage: "In 'Jai Ho,' A.R. Rahman delivers a message of triumph and celebration. The song, known for its infectious energy, encourages people to rejoice in moments of victory and embrace the joy of life. With a blend of Bollywood and pop elements, 'Jai Ho' has become an anthem of positivity and exuberance."
         },
@@ -87,10 +91,10 @@
     const wakaWakaInfo = {
         song: {
           title: "Waka Waka (This Time for Africa)",
-          genre: "Afrobeat/Pop",
-          language: "English/Spanish",
-          occasion: "Sports events, Celebrations, Unity",
-          culture: "African/Colombian",
+          genre: ["Afrobeat","Pop"],
+          language: ["English","Spanish"],
+          occasion: ["Sports events", "Celebrations", "Unity"],
+          culture: ["African", "Colombian"],
           artistMessage: "In 'Waka Waka,' Shakira sends a message of unity, celebration, and empowerment. The song, chosen as the official song for the 2010 FIFA World Cup, embodies the spirit of Africa and encourages people to come together, celebrate diversity, and showcase the vibrancy of African and Colombian cultures through music and dance."
         },
         artist: {
