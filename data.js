@@ -128,7 +128,7 @@
           title: "Wangeci",
           genre: "Benga (Kenyan)",
           language: "Luo",
-          occasion: ["Kenyan Traditional ceremonies", "Celebrations"],
+          occasion: ["Kenyan traditional ceremonies", "Celebrations"],
           culture: "Kenyan",
           artistMessage: "In 'Wangeci,' Sukuma Bin Ongaro celebrates the Kenyan Luo culture. The song, sung in Luo, reflects the vibrancy and richness of Kenyan traditional music. 'Wangeci' is often played during traditional ceremonies and celebrations, serving as a testament to the cultural heritage and diversity of Kenya. The artist's message through the song is a celebration of love, life, and the spirit of the Kenyan people."
         },
@@ -263,7 +263,6 @@
             return flatArray.concat(Array.isArray(current) ? flattenArray(current) : current);
         }, []);
     }
-
 
     const titleList = songList.map(song => song.song.title);
     const genreList =  flattenArray(songList.map(song => song.song.genre));

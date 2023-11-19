@@ -7,7 +7,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh / 4);
 }
 
 .category {
@@ -19,25 +18,28 @@
     align-items: center;
     text-align: center;
     font-size: 48px;
-    margin-left: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .options {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh / 8 * 5);
     background: lightblue;
 }
 
 .options-list {
     width: 250px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
     font-size: 20px;
-    margin-left: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
     list-style-type: none;
 }
 
@@ -79,29 +81,26 @@
             <ul id="List3"></ul>
         </div>
         <script>
-            let genres = ["Reggaeton", "Pop", "Bollywood", "Afrobeat", "Rock and Roll", "Dutch", "Benga", "Classical", "World", "Folk", "Hip-hop", "J-Rock", "Progressive Metal", "Romani", "Gypsy"];
-            let genrelist = document.getElementById("List1");
-            for (i = 0; i < genres.length; ++i) {
+
+            function listout(array, makelist) {
+                for (i = 0; i < array.length; ++i) {
                 var li = document.createElement('li');
-                li.innerText = genres[i];
-                genrelist.appendChild(li);
+                li.innerText = array[i];
+                makelist.appendChild(li);
+                }
             }
             
-            let occasions = ["Social gatherings", "parties", "events", "Humanitarian events", "charity functions", "Celebrations", "Victory", "Festivals"];
-            let occasionlist = document.getElementById("List2");
-            for (i = 0; i < occasions.length; ++i) {
-                var li = document.createElement('li');
-                li.innerText = occasions[i];
-                occasionlist.appendChild(li);
-            }
+            let genres = ["Reggaeton", "Pop", "Bollywood", "Afrobeat", "Rock and Roll", "Dutch", "Benga", "Classical", "World", "Folk", "Hip-hop", "J-Rock", "Progressive Metal", "Romani", "Gypsy"];
+            let genrelist = document.getElementById("List1");
+            listout(genres, genrelist)
 
-            let cultures = ["Latin", "Puerto Rican", "Global", "Indian"];
+            let occasions = ["Social gatherings", "Parties", "Events", "Humanitarian events", "Charity functions", "Celebrations", "Victory", "Festivals", "Sports events", "Unity", "Dance parties", "Dutch celebrations", "Festivals", "Kenyan traditional ceremonies", "Concerts", "Formal events", "Cultural events", "Acoustic performances", "Anime themes", "Rock events"];
+            let occasionlist = document.getElementById("List2");
+            listout(occasions, occasionlist)
+
+            let cultures = ["Latin", "Puerto Rican", "Global", "Indian", "African", "Colombian", "Dutch", "Kenyan", "Western Classical", "African", "Somali", "Canadian", "Japanese", "Scottish", "Romani"];
             let culturelist = document.getElementById("List3");
-            for (i = 0; i < cultures.length; ++i) {
-                var li = document.createElement('li');
-                li.innerText = cultures[i];
-                culturelist.appendChild(li);
-            }
+            listout(cultures, culturelist)
             
         </script>
     </div>

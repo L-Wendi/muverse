@@ -7,6 +7,12 @@ body {
     background-size: cover;
     background-color: rgba(100, 255, 255, 0.7);
     background-size: 800px 600px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
     /* background-color: lightblue; */
 }
 
@@ -15,7 +21,7 @@ h3 {
     color: black;
     padding: 20px;
     text-align: center;
-    /* background-color: white;
+    background-color: white;
     display: block;
     height: 20px;
     width: 400px;
@@ -26,8 +32,30 @@ h3 {
     font-weight: bold;
     line-height: 60px;
     font-size: 20px;
-    transition: 0.3s; */
+    transition: 0.3s;
 }
+
+.row-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+
+.container {
+    flex: 1;
+    max-width: 800px;
+    margin: 20px auto;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 10px, 20px;
+    column-gap: 40px;
+}
+
+
+
 .col {
     background: white;
     color: black;
@@ -42,24 +70,88 @@ h3 {
     font-weight: bold;
     line-height: 60px;
     font-size: 20px;
+    margin-bottom: 20px;
     /* transition: 0.3s; */
     
 }
 
-.albumphoto {
-    height: 400px;
-    width: 50px;
+#albumphoto span {
+    display: block;
+    text-align: center;
+}
+
+#albumphoto,
+#musicline,
+#dot {
+    margin-bottom: 20px;
+}
+
+#musicline,
+#dot {
+    height: 2px;
+    background-color: #333;
+    
+}
+
+#dot {
+    height: 20px;
+    width: 20px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+#albumphoto {
+    background: white;
+    padding: 200pv;
+}
+
+.col2 {
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    margin: 0 auto 20px auto;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 60px;
+    font-size: 20px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    overflow: hidden;
+    align-items: center;
+    margin-bottom: 20px;
 
 }
 
+
 .musicline {
+    /* height: 2px; */
+    background-color: #333;
+    color: ;
+
 
 }
 
 .dot {
+    height: 20px;
+    width: 20px;
+    background-color: #333;
+    border-radius: 50%;
+    margin-bottom: 20px;
 
 }
 
 .lyrics {
+    padding-bottom: 20vh;
+    margin-bottom: 0;
+    background: white;
+    
+    
 
 }
+
+.row {
+    margin-bottom: 20px;
+}
+
