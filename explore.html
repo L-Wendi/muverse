@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh / 2)
+    height: calc(100vh / 4);
 }
 
 .category {
@@ -21,15 +21,51 @@
     font-size: 48px;
     margin-left: 10px;
 }
+
+.options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh / 8 * 5);
+    background: lightblue;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh / 8);
+    background: white;
+}
+
+.submit-btn {
+    width: 100px;
+    height: 30px;
+    background: grey;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;   
+    text-decoration: none;
+}
 </style>
 </head>
 
 <body>
     <div class="categories">
-        <div class="category">Language</div>
-        <div class="category">Culture</div>
         <div class="category">Genre</div>
-        <div class="category">Theme</div>
+        <div class="category">Language</div>
+        <div class="category">Occasion</div>
+        <div class="category">Culture</div>
+    </div>
+
+    <div class="options">
+
+    </div>
+
+    <div class="submit">
+        <a class="submit-btn" href="playlist-page.html">Find songs!</a>
     </div>
 
 </body>
