@@ -7,7 +7,18 @@
     6. Tulpen uit Amsterdam
     7. Wangeci
     8. Jupiter, the Bringer of Jollity
-    9. */
+    9. Malaika
+    10. Wavin' Flag
+    11. Rakuyou
+    12. Glasgow Kiss
+    13. Ederlezi
+    14. 
+    15.
+    16.
+    17.
+    18.
+    19.
+    20. */
     
     const despacitoInfo = {
         song: {
@@ -150,4 +161,89 @@
       };
       
     console.log(jupiterInfo);
+    
+    const malaikaInfo = {
+        song: {
+          title: "Malaika",
+          genre: "World/Folk",
+          language: "Swahili",
+          occasion: "Cultural events, Acoustic performances",
+          culture: "African",
+          artistMessage: "In 'Malaika,' Miriam Makeba shares a heartfelt message of love and longing. Sung in Swahili, the song has become an iconic representation of African music. Often performed in cultural events and acoustic settings, 'Malaika' captures the essence of love and the bittersweet emotions associated with separation. Makeba's rendition of 'Malaika' reflects the beauty and depth of African folk music, conveying a universal message of love and the complexities of relationships."
+        },
+        artist: {
+          name: "Miriam Makeba",
+          homeland: "South Africa"
+        }
+      };
+      
+     console.log(malaikaInfo);
+    
+     const wavinFlagInfo = {
+        song: {
+          title: "Wavin' Flag",
+          genre: "Hip-Hop/World",
+          language: "English",
+          occasion: "Sports events, Celebrations, Unity",
+          culture: "Somali/Canadian",
+          artistMessage: "In 'Wavin' Flag,' K'naan delivers a powerful message of hope, resilience, and unity. The song, blending hip-hop and world music elements, became an anthem of inspiration, especially during sports events. Reflecting K'naan's Somali roots and Canadian identity, 'Wavin' Flag' celebrates the strength of the human spirit, the beauty of diversity, and the resilience of individuals facing challenges. The uplifting lyrics encourage people to keep waving their flags, symbolizing pride and solidarity."
+        },
+        artist: {
+          name: "K'naan",
+          homeland: "Somalia (Currently Canadian)"
+        }
+      };
+      
+      console.log(wavinFlagInfo);
+      
+      const rakuyouInfo = {
+        song: {
+          title: "Rakuyou",
+          genre: "J-Rock",
+          language: "Japanese",
+          occasion: "Anime themes, Concerts",
+          culture: "Japanese",
+          artistMessage: "In 'Rakuyou,' SID brings the energy of J-Rock to life. The song, sung in Japanese, is known for its dynamic sound and emotional depth. Often featured as an anime theme, 'Rakuyou' resonates with fans at concerts and events, showcasing the expressive nature of Japanese rock music. The song's message, embedded in its lyrics and musical composition, is a reflection of the band's artistic style and the emotional journey conveyed through their music."
+        },
+        artist: {
+          name: "SID",
+          homeland: "Japan"
+        }
+      };
+      
+      console.log(rakuyouInfo);
+    
+      const glasgowKissInfo = {
+        song: {
+          title: "Glasgow Kiss",
+          genre: "Progressive Metal",
+          language: "Instrumental (No lyrics)",
+          occasion: "Concerts, Rock events",
+          culture: "Scottish",
+          artistMessage: "In 'Glasgow Kiss,' John Petrucci showcases his virtuosity in the realm of progressive metal. The instrumental piece, with its intricate guitar work, is a celebration of musical skill and creativity. Often featured in concerts and rock events, 'Glasgow Kiss' captures the essence of Petrucci's musical style and technical prowess. While the song doesn't have lyrical content, its powerful composition conveys a message of musical complexity and artistic expression."
+        },
+        artist: {
+          name: "John Petrucci",
+          homeland: "United States (Scottish descent)"
+        }
+      };
+      
+      console.log(glasgowKissInfo);
+      
+      const ederleziInfo = {
+        song: {
+          title: "Ederlezi",
+          genre: "Romani/Gypsy",
+          language: "Romani",
+          occasion: "Cultural celebrations, Festivals",
+          culture: "Romani",
+          artistMessage: "In 'Ederlezi,' Saban Bajramovic brings the soulful sounds of Romani music to life. Sung in the Romani language, the song is often associated with cultural celebrations and festivals. 'Ederlezi' reflects the rich musical heritage of the Romani people, known for their vibrant and emotional expressions through music. The artist's message in this song is a celebration of life, love, and the cultural identity of the Romani community."
+        },
+        artist: {
+          name: "Saban Bajramovic",
+          homeland: "Serbia (Romani descent)"
+        }
+      };
+      
+      console.log(ederleziInfo);
       
