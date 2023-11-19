@@ -24,6 +24,7 @@
      "Jupiter, the Bringer of Jollity", "Malaika", "Wavin' Flag", "Rakuyou", "Glasgow Kiss", "Ederlezi"];
     const genreList = ["Reggaeton", "Pop", "Bollywood", "Afrobeat", "Rock and Roll", "Dutch", "Benga", "Classical", "World", "Folk", "Hip-hop",
     "J-Rock", "Progressive Metal", "Romani", "Gypsy"];
+    const languageList = ["Spanish", "English", "Hindi", "Urdu", "Dutch", "Luo", "Instrumental", "Swahili", "Japanese", "Romani"];
     
     const despacitoInfo = {
         song: {
