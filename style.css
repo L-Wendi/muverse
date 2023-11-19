@@ -1,0 +1,46 @@
+* {
+    
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+body {
+    background-image: url(/images/music\ background.png);
+    background-size: cover;
+    background-size: 800px 600px;
+    /* background:  lightblue; */
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    padding: 50px;
+}
+
+.image1 {
+    border-radius: 250%;
+    height: 200px;
+    width: 200px;
+    border: 1px solid white;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.button {
+    background: lightblue;
+    color: black;
+    display: block;
+    height: 60px;
+    width: 400px;
+    border-radius: 20px;
+    margin: 20px auto;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    line-height: 60px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.welcomemessage {
+
+}
