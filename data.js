@@ -19,6 +19,11 @@
     18.
     19.
     20. */
+
+    const songsList = ["Despacito", "Heal the world", "Jai Ho", "Waka waka (This time for Africa)", "La Bamba", "Tulpen uit Amsterdam", "Wangeci",
+     "Jupiter, the Bringer of Jollity", "Malaika", "Wavin' Flag", "Rakuyou", "Glasgow Kiss", "Ederlezi"];
+    const genreList = ["Reggaeton", "Pop", "Bollywood", "Afrobeat", "Rock and Roll", "Dutch", "Benga", "Classical", "World", "Folk", "Hip-hop",
+    "J-Rock", "Progressive Metal", "Romani", "Gypsy"];
     
     const despacitoInfo = {
         song: {
