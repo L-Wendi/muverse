@@ -1,5 +1,6 @@
   
-/*  1. Despacito
+/*  
+    1. Despacito
     2. Heal the world
     3. Jai Ho
     4. Waka waka (This time for Africa)
@@ -12,13 +13,7 @@
     11. Rakuyou
     12. Glasgow Kiss
     13. Ederlezi
-    14. 
-    15.
-    16.
-    17.
-    18.
-    19.
-    20. */
+*/
 
     const titleList = ["Despacito", "Heal the world", "Jai Ho", "Waka waka (This time for Africa)", "La Bamba", "Tulpen uit Amsterdam", "Wangeci",
      "Jupiter, the Bringer of Jollity", "Malaika", "Wavin' Flag", "Rakuyou", "Glasgow Kiss", "Ederlezi"];
