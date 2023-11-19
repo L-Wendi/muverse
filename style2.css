@@ -1,0 +1,65 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-image: url(/images/music\ background.png);
+    background-size: cover;
+    background-color: rgba(100, 255, 255, 0.7);
+    background-size: 800px 600px;
+    /* background-color: lightblue; */
+}
+
+h3 {
+    text-align: center;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    /* background-color: white;
+    display: block;
+    height: 20px;
+    width: 400px;
+    border-radius: 20px;
+    margin: 20px auto;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    line-height: 60px;
+    font-size: 20px;
+    transition: 0.3s; */
+}
+.col {
+    background: white;
+    color: black;
+    display: block;
+    height: 60px;
+    width: 50px;
+    border-radius: 50px;
+    margin: 20px auto;
+    /* text-decoration: none; */
+    text-decoration-color: lightblue;
+    text-align: center;
+    font-weight: bold;
+    line-height: 60px;
+    font-size: 20px;
+    /* transition: 0.3s; */
+    
+}
+
+.albumphoto {
+    height: 400px;
+    width: 50px;
+
+}
+
+.musicline {
+
+}
+
+.dot {
+
+}
+
+.lyrics {
+
+}
