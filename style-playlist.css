@@ -1,0 +1,35 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: lightcyan;
+}
+.PlaylistName{
+    text-align: center;
+}
+.about {
+    margin-top: 60px; /* Adds spacing above the container */
+}
+.about1 {
+    margin-top: 60px; /* Adds spacing above the container */
+}
+.button {
+    background: white;
+    color: black; /* text colour */
+    display: block; /* Makes each button on it’s own line */
+    height: 60px;
+    width: 400px;
+    border-radius: 20px; 
+    margin: 20px auto; /* Adds spacing to the button and centers it */
+    text-decoration: none; /* Removes underline from hyperlink */
+    text-align: center;
+    font-weight: bold; /* Bolds the text */
+    line-height: 60px; /* Vertically aligns the text */
+    font-size: 20px;
+    transition: 0.5s;
+}
+.button:hover {
+	background: lightpink;
+	color: white;
+}
