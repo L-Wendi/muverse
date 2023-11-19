@@ -15,21 +15,6 @@
     13. Ederlezi
 */
 
-    const titleList = ["Despacito", "Heal the world", "Jai Ho", "Waka waka (This time for Africa)", "La Bamba", "Tulpen uit Amsterdam", "Wangeci",
-     "Jupiter, the Bringer of Jollity", "Malaika", "Wavin' Flag", "Rakuyou", "Glasgow Kiss", "Ederlezi"];
-    const genreList = ["Reggaeton", "Pop", "Bollywood", "Afrobeat", "Rock and Roll", "Dutch", "Benga", "Classical", "World", "Folk", "Hip-hop",
-    "J-Rock", "Progressive Metal", "Romani", "Gypsy"];
-    const languageList = ["Spanish", "English", "Hindi", "Urdu", "Dutch", "Luo", "Instrumental", "Swahili", "Japanese", "Romani"];
-    const occasionList = ["Social gatherings", "Parties", "Events", "Humanitarian events", "Charity functions", "Celebrations", "Victory", "Festivals", 
-    "Sports events", "Unity", "Dance parties", "Dutch celebrations, Festivals", "Kenyan Traditional ceremonies", "Concerts", "Formal events", 
-    "Cultural events", "Acoustic performances", "Anime themes", "Rock events"];
-    const cultureList = ["Latin", "Puerto Rican", "Global", "Indian", "African", "Colombian", "Dutch", "Kenyan", "Western Classical", 
-    "African", "Somali", "Canadian", "Japanese", "Scottish", "Romani"];
-    const artistNameList = ["Luis Fonsi", "Daddy Yankee", "Michael Jackson", "A.R. Rahman", "Shakira", "Ritchie Valens", "Herman Emmink", 
-    "Sukuma Bin Ongaro", "Gustav Holst", "Miriam Makeba", "K'naan", "SID", "John Petrucci", "Saban Bajramovic"];
-    const homeLandList = ["Puerto Rico", "United States", "India", "Colombia", "United States (Mexican-American)", "Netherlands", "Kenya", 
-    "United Kingdom", "South Africa", "Somalia (currently Canadian)", "Japan", "United States (Scottish descent)", ];
-    
     const despacitoInfo = {
         song: {
           title: "Despacito",
@@ -254,6 +239,47 @@
           homeland: "Serbia (Romani descent)"
         }
       };
-      
+
       console.log(ederleziInfo);
+
+      const allSongs = [
+        despacitoInfo,
+        healTheWorldInfo,
+        jaiHoInfo,
+        wakaWakaInfo,
+        laBambaInfo,
+        tulpenUitAmsterdamInfo,
+        wangeciInfo,
+        jupiterInfo,
+        malaikaInfo,
+        wavinFlagInfo,
+        rakuyouInfo,
+        glasgowKissInfo,
+        ederleziInfo,
+      ]      
+
+    function flattenArray(arr) {
+        return arr.reduce((flatArray, current) => {
+            return flatArray.concat(Array.isArray(current) ? flattenArray(current) : current);
+        }, []);
+    }
+
+
+    const titleList = songList.map(song => song.song.title);
+    const genreList =  flattenArray(songList.map(song => song.song.genre));
+    const languageList = songList.map(song => song.song.language);
+    const occasionList =  flattenArray(songList.map(song => song.song.occasion));
+    const artistNameList =  flattenArray(songList.map(song => song.song.artistName));
+   
+   //const languageList = ["Spanish", "English", "Hindi", "Urdu", "Dutch", "Luo", "Instrumental", "Swahili", "Japanese", "Romani"];
+   //const occasionList = ["Social gatherings", "Parties", "Events", "Humanitarian events", "Charity functions", "Celebrations", "Victory", "Festivals", 
+   //"Sports events", "Unity", "Dance parties", "Dutch celebrations, Festivals", "Kenyan Traditional ceremonies", "Concerts", "Formal events", 
+   //"Cultural events", "Acoustic performances", "Anime themes", "Rock events"];
+   //const cultureList = ["Latin", "Puerto Rican", "Global", "Indian", "African", "Colombian", "Dutch", "Kenyan", "Western Classical", 
+   //"African", "Somali", "Canadian", "Japanese", "Scottish", "Romani"];
+   //const artistNameList = ["Luis Fonsi", "Daddy Yankee", "Michael Jackson", "A.R. Rahman", "Shakira", "Ritchie Valens", "Herman Emmink", 
+   //"Sukuma Bin Ongaro", "Gustav Holst", "Miriam Makeba", "K'naan", "SID", "John Petrucci", "Saban Bajramovic"];
+   //const homeLandList = ["Puerto Rico", "United States", "India", "Colombia", "United States (Mexican-American)", "Netherlands", "Kenya", 
+   //"United Kingdom", "South Africa", "Somalia (currently Canadian)", "Japan", "United States (Scottish descent)", ];
+
       
