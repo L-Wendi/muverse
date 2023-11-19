@@ -26,7 +26,7 @@
     "J-Rock", "Progressive Metal", "Romani", "Gypsy"];
     const languageList = ["Spanish", "English", "Hindi", "Urdu", "Dutch", "Luo", "Instrumental", "Swahili", "Japanese", "Romani"];
     const occasionList = ["Social gatherings", "Parties", "Events", "Humanitarian events", "Charity functions", "Celebrations", "Victory", "Festivals", 
-    "Sports events", "Unity", "Dance parties", "Dutch celebrations, Festivals", "Kenyan Traditional ceremonies", "Concerts", "Formal events", 
+    "Sports events", "Unity", "Dance parties", "Dutch celebrations", "Festivals", "Kenyan traditional ceremonies", "Concerts", "Formal events", 
     "Cultural events", "Acoustic performances", "Anime themes", "Rock events"];
     const cultureList = ["Latin", "Puerto Rican", "Global", "Indian", "African", "Colombian", "Dutch", "Kenyan", "Western Classical", 
     "African", "Somali", "Canadian", "Japanese", "Scottish", "Romani"];
@@ -148,7 +148,7 @@
           title: "Wangeci",
           genre: "Benga (Kenyan)",
           language: "Luo",
-          occasion: ["Kenyan Traditional ceremonies", "Celebrations"],
+          occasion: ["Kenyan traditional ceremonies", "Celebrations"],
           culture: "Kenyan",
           artistMessage: "In 'Wangeci,' Sukuma Bin Ongaro celebrates the Kenyan Luo culture. The song, sung in Luo, reflects the vibrancy and richness of Kenyan traditional music. 'Wangeci' is often played during traditional ceremonies and celebrations, serving as a testament to the cultural heritage and diversity of Kenya. The artist's message through the song is a celebration of love, life, and the spirit of the Kenyan people."
         },
