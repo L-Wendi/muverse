@@ -111,7 +111,7 @@
           title: "Tulpen uit Amsterdam",
           genre: "Dutch",
           language: "Dutch",
-          occasion: ["Dutch celebrations", "Festivals"],
+          occasion: ["Celebrations", "Festivals"],
           culture: "Dutch",
           artistMessage: "In 'Tulpen uit Amsterdam,' Herman Emmink celebrates the beauty of tulips and the city of Amsterdam. The song, sung in Dutch, is often associated with Dutch traditions and festivities. With its cheerful melody, the song reflects the joy and pride of the Dutch culture, particularly the iconic tulip fields and the vibrant city of Amsterdam."
         },
@@ -128,7 +128,7 @@
           title: "Wangeci",
           genre: "Benga (Kenyan)",
           language: "Luo",
-          occasion: ["Kenyan traditional ceremonies", "Celebrations"],
+          occasion: ["Ceremonies", "Celebrations"],
           culture: "Kenyan",
           artistMessage: "In 'Wangeci,' Sukuma Bin Ongaro celebrates the Kenyan Luo culture. The song, sung in Luo, reflects the vibrancy and richness of Kenyan traditional music. 'Wangeci' is often played during traditional ceremonies and celebrations, serving as a testament to the cultural heritage and diversity of Kenya. The artist's message through the song is a celebration of love, life, and the spirit of the Kenyan people."
         },
