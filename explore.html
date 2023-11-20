@@ -56,6 +56,8 @@
 }
 
 .submit-btn {
+    width: 100px;
+    height: 30px;
     background: grey;
     display: flex; 
     justify-content: center;
@@ -92,6 +94,7 @@
                 cbox.setAttribute('type', "checkbox");
                 cbox.setAttribute('id', array[i]);
                 cbox.setAttribute('name', array[i]);
+                cbox.className = "filter-checkbox";
                 var li = document.createElement('li');
                 li.appendChild(cbox);
                 li.appendChild(document.createTextNode(array[i]));
@@ -112,6 +115,10 @@
             listout(cultures, culturelist)
 
         </script>
+    </div>
+
+    <div class="submit">
+        <a class="submit-btn" href="playlist-page.html">Find songs!</a>
     </div>
 
     <div class="submit">
