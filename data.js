@@ -296,13 +296,13 @@
    // Function to filter data based on selected checkboxes
     function filterData() {
       const selectedGenres = Array.from(document.querySelectorAll('#List1 .filter-checkbox:checked')).map(checkbox => checkbox.name);
-      //const selectedOccasions = Array.from(document.querySelectorAll('#List2 .filter-checkbox:checked')).map(checkbox => checkbox.name);
+      const selectedOccasions = Array.from(document.querySelectorAll('#List2 .filter-checkbox:checked')).map(checkbox => checkbox.name);
       const selectedCultures = Array.from(document.querySelectorAll('#List3 .filter-checkbox:checked')).map(checkbox => checkbox.name);
     
         const filteredResult = songList.filter(item =>
             (selectedGenres.length === 0 || item.song.genre.some(genre => selectedGenres.includes(genre))) &&
-            (selectedCultures.length === 0 || item.song.culture.some(culture => selectedCultures.includes(culture)))
-        // || (selectedOccasions.length === 0 || item.song.occasion.some(genre => selectedOccasion.includes(occasion)))
+            (selectedCultures.length === 0 || item.song.culture.some(culture => selectedCultures.includes(culture))) &&
+            (selectedOccasions.length === 0 || item.song.occasion.some(occasion => selectedOccasions.includes(occasion)))
         // Add additional conditions for other checkboxes
       );
 
@@ -319,8 +319,8 @@
       } else {
         filteredData.forEach(item => {
           const itemElement = document.createElement('div');
-          itemElement.innerHTML = `<p>${item.song.title} - Genre: ${item.song.genre.join(', ')}; Culture: ${item.song.culture.join(', ')}</p>`;
-          //itemElement.innerHTML = `<p>${item.song.title} -- Genre: ${item.song.genre.join(', ')}, Culture: ${item.song.culture.join(', ')}, Occasion: ${item.song.occasion.join(', ')}</p>`;
+          //itemElement.innerHTML = `<p>${item.song.title} - Genre: ${item.song.genre.join(', ')}; Culture: ${item.song.culture.join(', ')}</p>`;
+          itemElement.innerHTML = `<p>${item.song.title} - Genre: ${item.song.genre.join(', ')}, Culture: ${item.song.culture.join(', ')}, Occasion: ${item.song.occasion.join(', ')}</p>`;
           filteredDataContainer.appendChild(itemElement);
         });
       }
