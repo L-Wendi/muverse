@@ -9,10 +9,17 @@
     align-items: center;
 }
 
+body {
+    background-image: url(/images/music\ background.png);
+    background-size: cover;
+    background: lightblue;
+}
+
 .category {
     width: 250px;
     height: 100px;
-    background: lightblue;
+    background: darkblue;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +29,7 @@
     margin-right: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
+    border-radius: 20px;
 }
 
 .options {
@@ -52,12 +60,12 @@
     justify-content: center;
     align-items: center;
     height: calc(100vh / 8);
-    background: white;
+    /* background: white; */
 }
 
 .submit-btn {
     height: 30px;
-    background: grey;
+    background: darkblue;
     display: flex; 
     justify-content: center;
     align-items: center;
@@ -65,6 +73,11 @@
     font-size: 20px;   
     text-decoration: none;
     color: white;
+    border-radius: 20px;
+    margin: 20px auto;
+    font-weight: bold;
+    text-emphasis-color: black;
+    
 }
 </style>
 </head>
@@ -116,11 +129,15 @@
     </div>
 
     <div class="submit">
-        <a class="submit-btn" href="playlist-page.html">Click here to find songs!</a>
+        <button class="submit-btn" id="recommend">Find songs!</button>
+    </div>
+
+    <div id="filteredData">
+        
     </div>
 
 </body>
-<data src="data.js">
+<script src="data.js">
 
-</data>
+</script>
 </html>
