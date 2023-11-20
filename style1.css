@@ -12,3 +12,26 @@ body {
         position: relative;
         
 }
+
+.emptybodies {
+    width: 592px; 
+    height: 74px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute; 
+    background: #D8D9FF; 
+    border-radius: 10px"
+
+}
+
+.wordstyling {
+    width: 468px; 
+    height: 84.07px; 
+    left: 0px; 
+    top: 143.78px; 
+    position: absolute; 
+    color: black; 
+    font-size: 36px; 
+    font-family: Inter; 
+    font-weight: 800; 
+}
