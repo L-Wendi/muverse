@@ -265,7 +265,7 @@
     }
 
     const titleList = songList.map(song => song.song.title); //first song is arbitrary
-    console.log(titleList)
+
     const genreList =  flattenArray(songList.map(song => song.song.genre));
     const languageList = songList.map(song => song.song.language);
     const occasionList =  flattenArray(songList.map(song => song.song.occasion));
@@ -295,15 +295,13 @@
    
    // Function to filter data based on selected checkboxes
     function filterData() {
-        console.log("Function is called!");
-      const selectedGenres = Array.from(document.querySelectorAll('#list1 .filter-checkbox:checked')).map(checkbox => checkbox.value);
-      console.log(selectedGenres);
-      const selectedCultures = Array.from(document.querySelectorAll('#list3 .filter-checkbox:checked')).map(checkbox => checkbox.value);
-      console.log(selectedCultures);
-        alert("hello")
+      const selectedGenres = Array.from(document.querySelectorAll('#List1 .filter-checkbox:checked')).map(checkbox => checkbox.name);
+      const selectedOccasions = Array.from(document.querySelectorAll('#List2 .filter-checkbox:checked')).map(checkbox => checkbox.name);
+      const selectedCultures = Array.from(document.querySelectorAll('#List3 .filter-checkbox:checked')).map(checkbox => checkbox.name);
       const filteredResult = songList.filter(item =>
-        (selectedGenres.length === 0 || item.song.genre.some(genre => selectedGenres.includes(genre))) &&
-        (selectedCultures.length === 0 || item.song.culture.some(culture => selectedCultures.includes(culture)))
+        (selectedGenres.length === 0 || item.song.genre.some(genre => selectedGenres.includes(genre))) ||
+        (selectedCultures.length === 0 || item.song.culture.some(culture => selectedCultures.includes(culture))) ||
+        (selectedOccasions.length === 0 || item.song.occasion.some(genre => selectedOccasion.includes(occasion)))
         // Add additional conditions for other checkboxes
       );
 
@@ -313,16 +311,14 @@
     // Function to display filtered data on the website
     function displayFilteredData(filteredData) {
       const filteredDataContainer = document.getElementById('filteredData');
-      console.log(filteredDataContainer);
       filteredDataContainer.innerHTML = '';
 
       if (filteredData.length === 0) {
         filteredDataContainer.innerHTML = '<p>No matching items found.</p>';
       } else {
         filteredData.forEach(item => {
-          console.log(item);
           const itemElement = document.createElement('div');
-          itemElement.innerHTML = `<p>${item.song.title} - Genre: ${item.song.genre.join(', ')}, Culture: ${item.song.culture.join(', ')}</p>`;
+          itemElement.innerHTML = `<p>${item.song.title} -- Genre: ${item.song.genre.join(', ')}, Culture: ${item.song.culture.join(', ')}, Occasion: ${item.song.occasion.join(', ')}, Language: ${item.song.language.join(', ')}, Artist Name: ${item.artist.name.join(', ')}</p>`;
           filteredDataContainer.appendChild(itemElement);
         });
       }
