@@ -285,7 +285,7 @@
     function filterData() {
       const selectedGenres = Array.from(document.querySelectorAll('#genreOptions .filter-checkbox:checked')).map(checkbox => checkbox.value);
       const selectedCultures = Array.from(document.querySelectorAll('#cultureOptions .filter-checkbox:checked')).map(checkbox => checkbox.value);
-
+        alert("hello")
       const filteredResult = titleList.filter(item =>
         (selectedGenres.length === 0 || item.genre.some(genre => selectedGenres.includes(genre))) &&
         (selectedCultures.length === 0 || item.culture.some(culture => selectedCultures.includes(culture)))
