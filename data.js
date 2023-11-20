@@ -281,14 +281,12 @@
    //const homeLandList = ["Puerto Rico", "United States", "India", "Colombia", "United States (Mexican-American)", "Netherlands", "Kenya", 
    //"United Kingdom", "South Africa", "Somalia (currently Canadian)", "Japan", "United States (Scottish descent)", ];
 
-   const data = []; // Your array of objects (each object representing a song)
-
-    // Function to filter data based on selected checkboxes
+   // Function to filter data based on selected checkboxes
     function filterData() {
       const selectedGenres = Array.from(document.querySelectorAll('#genreOptions .filter-checkbox:checked')).map(checkbox => checkbox.value);
       const selectedCultures = Array.from(document.querySelectorAll('#cultureOptions .filter-checkbox:checked')).map(checkbox => checkbox.value);
 
-      const filteredResult = data.filter(item =>
+      const filteredResult = titleList.filter(item =>
         (selectedGenres.length === 0 || item.genre.some(genre => selectedGenres.includes(genre))) &&
         (selectedCultures.length === 0 || item.culture.some(culture => selectedCultures.includes(culture)))
         // Add additional conditions for other checkboxes
