@@ -281,8 +281,21 @@
    //const homeLandList = ["Puerto Rico", "United States", "India", "Colombia", "United States (Mexican-American)", "Netherlands", "Kenya", 
    //"United Kingdom", "South Africa", "Somalia (currently Canadian)", "Japan", "United States (Scottish descent)", ];
 
+    // Get a reference to the button element
+    const myButton = document.getElementById('recommend');
+
+    // Define the action to be performed when the button is clicked
+    function handleClick() {
+      alert('Button clicked!');
+      // Add more code here for the action you want to perform
+    }
+
+    // Add the click event listener to the button
+    myButton.addEventListener('click', filterData);
+   
    // Function to filter data based on selected checkboxes
     function filterData() {
+        console.log("Function is called!");
       const selectedGenres = Array.from(document.querySelectorAll('#genreOptions .filter-checkbox:checked')).map(checkbox => checkbox.value);
       const selectedCultures = Array.from(document.querySelectorAll('#cultureOptions .filter-checkbox:checked')).map(checkbox => checkbox.value);
         alert("hello")
