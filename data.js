@@ -41,10 +41,10 @@
     const healTheWorldInfo = {
         song: {
           title: "Heal the World",
-          genre: "Pop",
+          genre: ["Pop"],
           language: "English",
           occasion: ["Humanitarian events", "Charity functions"],
-          culture: "Global"
+          culture: ["Global"]
         },
         artist: {
           name: "Michael Jackson",
@@ -61,7 +61,7 @@
           genre: ["Bollywood","Pop"],
           language: ["Hindi","Urdu"],
           occasion: ["Celebrations", "Victory", "Festivals"],
-          culture: "Indian",
+          culture: ["Indian"],
           artistMessage: "In 'Jai Ho,' A.R. Rahman delivers a message of triumph and celebration. The song, known for its infectious energy, encourages people to rejoice in moments of victory and embrace the joy of life. With a blend of Bollywood and pop elements, 'Jai Ho' has become an anthem of positivity and exuberance."
         },
         artist: {
@@ -92,10 +92,10 @@
     const laBambaInfo = {
         song: {
           title: "La Bamba",
-          genre: "Rock and Roll",
+          genre: ["Rock and Roll"],
           language: "Spanish",
           occasion: ["Celebrations", "Dance parties"],
-          culture: "Mexican-American",
+          culture: ["Mexican-American"],
           artistMessage: "In 'La Bamba,' Ritchie Valens celebrates Mexican-American culture and music. The song, a classic in the rock and roll genre, invites people to dance and enjoy the lively rhythms of traditional Mexican music. With its catchy beat and infectious energy, 'La Bamba' has become an iconic representation of cross-cultural fusion in the world of music."
         },
         artist: {
@@ -109,10 +109,10 @@
     const tulpenUitAmsterdamInfo = {
         song: {
           title: "Tulpen uit Amsterdam",
-          genre: "Dutch",
+          genre: ["Dutch"],
           language: "Dutch",
           occasion: ["Celebrations", "Festivals"],
-          culture: "Dutch",
+          culture: ["Dutch"],
           artistMessage: "In 'Tulpen uit Amsterdam,' Herman Emmink celebrates the beauty of tulips and the city of Amsterdam. The song, sung in Dutch, is often associated with Dutch traditions and festivities. With its cheerful melody, the song reflects the joy and pride of the Dutch culture, particularly the iconic tulip fields and the vibrant city of Amsterdam."
         },
         artist: {
@@ -126,10 +126,10 @@
     const wangeciInfo = {
         song: {
           title: "Wangeci",
-          genre: "Benga (Kenyan)",
+          genre: ["Benga (Kenyan)"],
           language: "Luo",
           occasion: ["Ceremonies", "Celebrations"],
-          culture: "Kenyan",
+          culture: ["Kenyan"],
           artistMessage: "In 'Wangeci,' Sukuma Bin Ongaro celebrates the Kenyan Luo culture. The song, sung in Luo, reflects the vibrancy and richness of Kenyan traditional music. 'Wangeci' is often played during traditional ceremonies and celebrations, serving as a testament to the cultural heritage and diversity of Kenya. The artist's message through the song is a celebration of love, life, and the spirit of the Kenyan people."
         },
         artist: {
@@ -143,10 +143,10 @@
     const jupiterInfo = {
         song: {
           title: "Jupiter, the Bringer of Jollity",
-          genre: "Classical",
+          genre: ["Classical"],
           language: "Instrumental (No lyrics)",
           occasion: ["Concerts", "Formal events"],
-          culture: "Western Classical",
+          culture: ["Western Classical"],
           artistMessage: "In 'Jupiter, the Bringer of Jollity,' Gustav Holst creates a musical masterpiece that is part of his larger composition 'The Planets.' This instrumental piece, without lyrics, is a part of Western Classical music, known for its grandeur and emotional depth. Often played in concert settings and formal events, the music captures the essence of Jupiter, the Roman god of thunder and the bringer of joy. Holst's message through this piece lies in the evocation of a majestic and jubilant atmosphere, celebrating the power and vitality associated with the planet Jupiter."
         },
         artist: {
@@ -163,7 +163,7 @@
           genre: ["World", "Folk"],
           language: "Swahili",
           occasion: ["Cultural events", "Acoustic performances"],
-          culture: "African",
+          culture: ["African"],
           artistMessage: "In 'Malaika,' Miriam Makeba shares a heartfelt message of love and longing. Sung in Swahili, the song has become an iconic representation of African music. Often performed in cultural events and acoustic settings, 'Malaika' captures the essence of love and the bittersweet emotions associated with separation. Makeba's rendition of 'Malaika' reflects the beauty and depth of African folk music, conveying a universal message of love and the complexities of relationships."
         },
         artist: {
@@ -194,10 +194,10 @@
       const rakuyouInfo = {
         song: {
           title: "Rakuyou",
-          genre: "J-Rock",
+          genre: ["J-Rock"],
           language: "Japanese",
           occasion: ["Anime themes", "Concerts"],
-          culture: "Japanese",
+          culture: ["Japanese"],
           artistMessage: "In 'Rakuyou,' SID brings the energy of J-Rock to life. The song, sung in Japanese, is known for its dynamic sound and emotional depth. Often featured as an anime theme, 'Rakuyou' resonates with fans at concerts and events, showcasing the expressive nature of Japanese rock music. The song's message, embedded in its lyrics and musical composition, is a reflection of the band's artistic style and the emotional journey conveyed through their music."
         },
         artist: {
@@ -211,10 +211,10 @@
       const glasgowKissInfo = {
         song: {
           title: "Glasgow Kiss",
-          genre: "Progressive Metal",
+          genre: ["Progressive Metal"],
           language: "Instrumental (No lyrics)",
           occasion: ["Concerts", "Rock events"],
-          culture: "Scottish",
+          culture: ["Scottish"],
           artistMessage: "In 'Glasgow Kiss,' John Petrucci showcases his virtuosity in the realm of progressive metal. The instrumental piece, with its intricate guitar work, is a celebration of musical skill and creativity. Often featured in concerts and rock events, 'Glasgow Kiss' captures the essence of Petrucci's musical style and technical prowess. While the song doesn't have lyrical content, its powerful composition conveys a message of musical complexity and artistic expression."
         },
         artist: {
@@ -231,7 +231,7 @@
           genre: ["Romani", "Gypsy"],
           language: "Romani",
           occasion: ["Cultural celebrations", "Festivals"],
-          culture: "Romani",
+          culture: ["Romani"],
           artistMessage: "In 'Ederlezi,' Saban Bajramovic brings the soulful sounds of Romani music to life. Sung in the Romani language, the song is often associated with cultural celebrations and festivals. 'Ederlezi' reflects the rich musical heritage of the Romani people, known for their vibrant and emotional expressions through music. The artist's message in this song is a celebration of life, love, and the cultural identity of the Romani community."
         },
         artist: {
@@ -242,7 +242,7 @@
 
       console.log(ederleziInfo);
 
-      const allSongs = [
+      const songList = [
         despacitoInfo,
         healTheWorldInfo,
         jaiHoInfo,
@@ -264,7 +264,8 @@
         }, []);
     }
 
-    const titleList = songList.map(song => song.song.title);
+    const titleList = songList.map(song => song.song.title); //first song is arbitrary
+    console.log(titleList)
     const genreList =  flattenArray(songList.map(song => song.song.genre));
     const languageList = songList.map(song => song.song.language);
     const occasionList =  flattenArray(songList.map(song => song.song.occasion));
@@ -283,7 +284,6 @@
 
     // Get a reference to the button element
     const myButton = document.getElementById('recommend');
-
     // Define the action to be performed when the button is clicked
     function handleClick() {
       alert('Button clicked!');
@@ -296,12 +296,14 @@
    // Function to filter data based on selected checkboxes
     function filterData() {
         console.log("Function is called!");
-      const selectedGenres = Array.from(document.querySelectorAll('#genreOptions .filter-checkbox:checked')).map(checkbox => checkbox.value);
-      const selectedCultures = Array.from(document.querySelectorAll('#cultureOptions .filter-checkbox:checked')).map(checkbox => checkbox.value);
+      const selectedGenres = Array.from(document.querySelectorAll('#list1 .filter-checkbox:checked')).map(checkbox => checkbox.value);
+      console.log(selectedGenres);
+      const selectedCultures = Array.from(document.querySelectorAll('#list3 .filter-checkbox:checked')).map(checkbox => checkbox.value);
+      console.log(selectedCultures);
         alert("hello")
-      const filteredResult = titleList.filter(item =>
-        (selectedGenres.length === 0 || item.genre.some(genre => selectedGenres.includes(genre))) &&
-        (selectedCultures.length === 0 || item.culture.some(culture => selectedCultures.includes(culture)))
+      const filteredResult = songList.filter(item =>
+        (selectedGenres.length === 0 || item.song.genre.some(genre => selectedGenres.includes(genre))) &&
+        (selectedCultures.length === 0 || item.song.culture.some(culture => selectedCultures.includes(culture)))
         // Add additional conditions for other checkboxes
       );
 
@@ -311,14 +313,16 @@
     // Function to display filtered data on the website
     function displayFilteredData(filteredData) {
       const filteredDataContainer = document.getElementById('filteredData');
+      console.log(filteredDataContainer);
       filteredDataContainer.innerHTML = '';
 
       if (filteredData.length === 0) {
         filteredDataContainer.innerHTML = '<p>No matching items found.</p>';
       } else {
         filteredData.forEach(item => {
+          console.log(item);
           const itemElement = document.createElement('div');
-          itemElement.innerHTML = `<p>${item.title} - Genre: ${item.genre.join(', ')}, Culture: ${item.culture.join(', ')}</p>`;
+          itemElement.innerHTML = `<p>${item.song.title} - Genre: ${item.song.genre.join(', ')}, Culture: ${item.song.culture.join(', ')}</p>`;
           filteredDataContainer.appendChild(itemElement);
         });
       }
