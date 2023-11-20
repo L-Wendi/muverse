@@ -1,3 +1,3 @@
 # muverse
 
-## Start at this [link](index0.html)
+## Start at this [html file](index0.html)
