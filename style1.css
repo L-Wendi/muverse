@@ -1,13 +1,14 @@
 
 body {
-        background-image: url(/images/music\ background.png);
+        /* background-image: url(/images/music\ background.png);
         background-size: cover;
-        background-color: rgba(100, 255, 255, 0.7);
-        background-size: 800px 600px;
+        background-color: rgba(100, 255, 255, 0.7); */
         margin-bottom: 0;
         padding-bottom: 0;
-        height: 100%;
+        height: fit-content;
         margin: 0;
         display: flex;
         flex-direction: column;
+        position: relative;
+        
 }
